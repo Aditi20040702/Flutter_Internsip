@@ -64,7 +64,7 @@ class _Page2State extends State<Page2>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-            backgroundColor: Color.fromRGBO(58, 104, 199, 1),
+            backgroundColor: Color.fromRGBO(90, 148, 236, 1),
       body: SafeArea(
         child: Column(
           children: [
@@ -114,7 +114,7 @@ class _Page2State extends State<Page2>{
     child: Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        // ✅ Yellow icon box
+        // Yellow icon box
         Container(
           width: 65,
           height: 69.11,
@@ -132,12 +132,12 @@ class _Page2State extends State<Page2>{
           ),
         ),
 
-        const SizedBox(width: 12), // ✅ space between icon & text
+        const SizedBox(width: 12),
 
-        // ✅ Text column
+        // Text column
         Expanded(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // ✅ brings Day Care down
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
@@ -314,7 +314,7 @@ class _Page2State extends State<Page2>{
               )
             ),
             centerTitle: true,
-            backgroundColor: Color.fromRGBO(58, 104, 199, 1),
+            backgroundColor: Color.fromRGBO(90, 148, 236, 1),
             actions: [
   Padding(
     padding: const EdgeInsets.only(right: 12),
@@ -329,10 +329,8 @@ class _Page2State extends State<Page2>{
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(
-          child: Icon(
-            Icons.add,
-            size: 18,
-            color: Color.fromRGBO(0, 0, 0, 1),
+          child: Image.asset(
+            "assets/images/add.png"
           ),
         ),
       ),

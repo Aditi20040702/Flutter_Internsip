@@ -65,7 +65,7 @@ class _Page3State extends State<Page3>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-            backgroundColor: Color.fromRGBO(58, 104, 199, 1),
+            backgroundColor: Color.fromRGBO(90, 148, 236, 1),
       body: SafeArea(
         child: Column(
           children: [
@@ -307,7 +307,7 @@ child: Padding(
               )
             ),
             centerTitle: true,
-            backgroundColor: Color.fromRGBO(58, 104, 199, 1),
+            backgroundColor: Color.fromRGBO(90, 148, 236, 1),
             actions: [
   Padding(
     padding: const EdgeInsets.only(right: 12),
@@ -322,10 +322,8 @@ child: Padding(
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(
-          child: Icon(
-            Icons.add,
-            size: 18,
-            color: Color.fromRGBO(0, 0, 0, 1),
+          child: Image.asset(
+            "assets/images/add.png",
           ),
         ),
       ),
