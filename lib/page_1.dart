@@ -87,7 +87,7 @@ Widget _timeChip(String text) {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-            backgroundColor: Color.fromRGBO(58, 104, 199, 1),
+            backgroundColor: Color.fromRGBO(90, 148, 236, 1),
       body: SafeArea(
         child: Column(
           children: [
@@ -283,11 +283,13 @@ Widget _timeChip(String text) {
                                     ),
                                   ),
                                       Padding(
-                                        padding: const EdgeInsets.only(left: 100, right: 10),
-                                        child: Icon(
-                                          Icons.calendar_month,
-                                          size: 45,
-                                          color: Color.fromRGBO(85, 145, 236, 1)
+                                        padding: const EdgeInsets.only(left: 95, right: 10, bottom: 10),
+                                        child: SizedBox(
+                                          height: 36,
+                                          width: 37,
+                                          child: Image.asset(
+                                            "assets/images/bookins.png",
+                                          ),
                                         ),
                                       )
                                 ],
@@ -330,7 +332,7 @@ Widget _timeChip(String text) {
                                   ),
                                 ),
                                     Padding(
-                                      padding: const EdgeInsets.only(left: 90, right: 10),
+                                      padding: const EdgeInsets.only(left: 90, right: 10, bottom: 10),
                                       child: CircleAvatar(
                                         radius:20,
                                         backgroundColor: Color.fromRGBO(8, 148, 114, 1),
@@ -596,7 +598,7 @@ Widget _timeChip(String text) {
               ),
             ),
             centerTitle: true,
-            backgroundColor: Color.fromRGBO(58, 104, 199, 1),
+            backgroundColor: Color.fromRGBO(90, 148, 236, 1),
             actions: [
   Padding(
     padding: const EdgeInsets.only(right: 25),
@@ -611,10 +613,8 @@ Widget _timeChip(String text) {
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(
-          child: Icon(
-            CupertinoIcons.add,
-            size: 25,
-            color: Color.fromRGBO(0, 0, 0, 1),
+          child: Image.asset(
+            "assets/images/add.png",
           ),
         ),
       ),
